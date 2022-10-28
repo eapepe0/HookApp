@@ -9,3 +9,15 @@ button{
   display: flex;
   justify-content: center;
 }
+
+.imagen_card{
+  max-width: 50%;
+  height: min-content;
+}
+
+.centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
