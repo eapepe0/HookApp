@@ -1,7 +1,7 @@
 import { useCounter , useFetch } from "../hooks";
-import { Card , Loading } from "./index";
+import { Card , Loading } from "../03-examples/index";
 
-export const MultipleCustomHooks = () => {
+export const Layout = () => {
 
     const { counter ,increment } =  useCounter(1)
     const { data , isLoading , hasError } = useFetch (`https://www.breakingbadapi.com/api/quotes/${ counter }`)

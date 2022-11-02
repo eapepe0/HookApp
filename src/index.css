@@ -21,3 +21,11 @@ button{
   align-items: center;
   flex-direction: row;
 }
+
+
+.centro-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
