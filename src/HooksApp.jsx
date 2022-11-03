@@ -15,7 +15,7 @@ import { ScrollAnimation } from './04-useRef/ScrollAnimation'
 import { LoadingApp } from './04-useRef/LoadingApp'
 
 import { Memorize } from './06-Memos/Memorize'
-
+import { MemoHook } from './06-Memos/MemoHook'
 
 
 export const HooksApp = () => {
@@ -48,7 +48,8 @@ export const HooksApp = () => {
 {/*         <LoadingApp />
 
         <FocusScreen /> */}
-    <Memorize />
+    {/* <Memorize /> */}
+    <MemoHook />
     </div>
   )
 }
