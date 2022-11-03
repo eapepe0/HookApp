@@ -8,12 +8,13 @@ export const Card = ({author , quote , onFunction}) => {
     // hace una llamada por personajes
     const { img } = (!!data   && data.length > 0) && data[0]; // extrae la imagen del personaje
 
-    const pRef = useRef();
-    const [boxSize , setBoxSize] = useState({width : 0, height : 0})
+    const pRef = useRef(); // creamos una referencia 
+    const [boxSize , setBoxSize] = useState({width : 0, height : 0}) // creamos un objeto con un tamaño
+
     useLayoutEffect(() =>{
-        const { width , height } = pRef.current.getBoundingClientRect();
-        setBoxSize({height , width})
-    },[quote])
+        const { width , height } = pRef.current.getBoundingClientRect(); // sacamos la dimension de nuestro contenedor
+        setBoxSize({height , width}) // ponemos esos valores en el estado
+    },[quote]) // corre cada vez que hay un cambio en quote
 
   return (
     <>
