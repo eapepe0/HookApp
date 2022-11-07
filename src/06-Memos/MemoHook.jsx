@@ -47,11 +47,15 @@ export const MemoHook = () => {
  * 
  * const memorizedValue = useMemo ()
  * 
- * recibe una funcion , que debe devulver algo
+ * recibe una funcion , que debe devolver algo
  * 
  * const memorizedValue = useMemo (( ) => heavyStuff( counter ) )
  * 
  * despues como segundo argumento , una depencia que solo se ejecuta si ese valor cambia
  * 
  * const memorizedValue = useMemo (( ) => heavyStuff( counter ) , [counter])
+ * 
+ * ahora vemos que solo se ejecuta la 1era vez que se renderiza , y cada vez que apretamos el boton +1
+ * 
+ * 
  */

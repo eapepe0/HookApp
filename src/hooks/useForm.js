@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export const useForm = ( initialForm = {}) => {
+    
     const [formState, setFormState] = useState( initialForm ) // estado y funcion valores iniciales que le podemos dar
    
     const onInputChange = ({ target}) =>{ // funcion que al tener un cambio el input se dispara

@@ -16,40 +16,51 @@ import { LoadingApp } from './04-useRef/LoadingApp'
 
 import { Memorize } from './06-Memos/Memorize'
 import { MemoHook } from './06-Memos/MemoHook'
+import { CallbackHook } from './06-Memos/CallbackHook'
 
+import { Padre } from './07-tarea-memo/Padre'
 
+import  AppEjemploYT  from './Ejemplos YT/AppEjemplo'
+
+import './08-useReducer/intro-reducer'
+
+import { TodoApp } from './08-useReducer/TodoApp'
 export const HooksApp = () => {
-  return (
-    <div className='container'>
-        <h1 className='title'>HooksApp</h1>
+    return (
+        <div className='container'>
+            <h1 className='title'>HooksApp</h1>
             <hr />
-        {/* <h2>useState</h2> */}
+            {/* <h2>useState</h2> */}
             <hr />
-        {/* <CounterApp /> */}
+            {/* <CounterApp /> */}
             <hr />
-        {/* <CounterWithCustomHook /> */}
+            {/* <CounterWithCustomHook /> */}
             <hr />
             <br /><br />
-        {/* <h2>useEffect</h2> */}
-        <hr />
-            {/* <SimpleForm />     */}    
-        <hr />
+            {/* <h2>useEffect</h2> */}
+            <hr />
+            {/* <SimpleForm />     */}
+            <hr />
             {/* <FormWithCustomHook /> */}
-        <hr />
-       {/* <MultipleCustomHooks /> */}
+            <hr />
+            {/* <MultipleCustomHooks /> */}
 
 
-        {/* <FocusScreen /> */}
-    {/*      <Layout />  */}
-        {/* <FocusApp /> */}
-        {/* <CopyApp /> */}
-        {/* <MediaPlayer /> */}
-        {/* <ScrollAnimation /> */}
-{/*         <LoadingApp />
+            {/* <FocusScreen /> */}
+            {/*      <Layout />  */}
+            {/* <FocusApp /> */}
+            {/* <CopyApp /> */}
+            {/* <MediaPlayer /> */}
+            {/* <ScrollAnimation /> */}
+            {/*         <LoadingApp />
 
         <FocusScreen /> */}
-    {/* <Memorize /> */}
-    <MemoHook />
-    </div>
-  )
+            {/* <Memorize /> */}
+            {/*     <MemoHook /> */}
+            {/* <CallbackHook /> */}
+            {/* <Padre /> */}
+            {/* <AppEjemploYT /> */}
+         <TodoApp/>  
+        </div>
+    )
 }
