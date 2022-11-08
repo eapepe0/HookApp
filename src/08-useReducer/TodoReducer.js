@@ -1,5 +1,5 @@
 export const todoReducer = (initialState = [], action) => {
-    console.log(action)
+    
   switch (action.type) {
     case '[TODO] Add Todo':
         return [...initialState , action.payload] // agrega el payload que pasamos al estado
@@ -19,3 +19,4 @@ export const todoReducer = (initialState = [], action) => {
       return initialState;
   }
 };
+export default todoReducer;

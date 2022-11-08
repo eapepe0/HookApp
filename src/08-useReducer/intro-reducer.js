@@ -17,7 +17,7 @@ const todoReducer = ( state = initialState , action = {}) =>{ // estado inicial 
 
 let todos = todoReducer(); // llamamos al todoReducer
 
-console.log(todos)
+//console.log(todos)
 
 /* todos.push({
     id: 2,
@@ -44,4 +44,4 @@ const addTodoAction ={
 }
 todos = todoReducer(todos , addTodoAction )
 
-console.log({state : todos})
+//console.log({state : todos})
