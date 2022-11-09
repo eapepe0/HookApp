@@ -29,3 +29,7 @@ button{
   align-items: center;
   flex-direction: column;
 }
+
+a{
+  margin-right: 5px;
+}

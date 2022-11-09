@@ -20,47 +20,20 @@ import { CallbackHook } from './06-Memos/CallbackHook'
 
 import { Padre } from './07-tarea-memo/Padre'
 
-import  AppEjemploYT  from './Ejemplos YT/AppEjemplo'
+import AppEjemploYT from './Ejemplos YT/AppEjemplo'
 
 import './08-useReducer/intro-reducer'
 
 import { TodoApp } from './08-useReducer/TodoApp'
+import { MainApp } from './09-useContext/MainApp'
+
+
 export const HooksApp = () => {
     return (
         <div className='container'>
             <h1 className='title'>HooksApp</h1>
             <hr />
-            {/* <h2>useState</h2> */}
-            <hr />
-            {/* <CounterApp /> */}
-            <hr />
-            {/* <CounterWithCustomHook /> */}
-            <hr />
-            <br /><br />
-            {/* <h2>useEffect</h2> */}
-            <hr />
-            {/* <SimpleForm />     */}
-            <hr />
-            {/* <FormWithCustomHook /> */}
-            <hr />
-            {/* <MultipleCustomHooks /> */}
-
-
-            {/* <FocusScreen /> */}
-            {/*      <Layout />  */}
-            {/* <FocusApp /> */}
-            {/* <CopyApp /> */}
-            {/* <MediaPlayer /> */}
-            {/* <ScrollAnimation /> */}
-            {/*         <LoadingApp />
-
-        <FocusScreen /> */}
-            {/* <Memorize /> */}
-            {/*     <MemoHook /> */}
-            {/* <CallbackHook /> */}
-            {/* <Padre /> */}
-            {/* <AppEjemploYT /> */}
-         <TodoApp/>  
+            <MainApp />
         </div>
     )
 }
