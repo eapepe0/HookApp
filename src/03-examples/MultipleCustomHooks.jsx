@@ -13,7 +13,7 @@ export const MultipleCustomHooks = () => {
     //  no podemos desestructurar algo que sea null en nuestro caso author y quote cuando data sea null
     // pero si podemos desestructurar algo que sea false , si le hacemos doble negacion convertimos el null a false
     // y no tira error
-    console.log(`https://www.breakingbadapi.com/api/quotes/${ counter }`)
+/*     console.log(`https://www.breakingbadapi.com/api/quotes/${ counter }`) */
   return (
     <>
         <h1>Breaking Bad Quotes</h1>

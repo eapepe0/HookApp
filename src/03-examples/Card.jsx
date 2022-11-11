@@ -32,7 +32,7 @@ export const Card = ({author , quote , onFunction}) => {
                 </blockquote>
                 <div className="centro">
                     <code>{JSON.stringify(boxSize)}</code>
-                    <button className="btn btn-primary mt-3" onClick={()=>onFunction()} >Next Quote</button> 
+                    <button className="btn btn-primary mt-3" onClick={()=>onFunction()} disabled={isLoading}>Next Quote</button> 
                     {/* se crea la funcion de incrementar que se llama desde el padre */}
                 </div>
             </div>
