@@ -35,16 +35,15 @@ describe('Pruebas en todoReducer',()=>{
                 done: false,
             }
         };
-        const newState = todoReducer(initialState , action)
+        const newState = todoReducer(initialState , action) // agregamos un todo
         console.log(newState)
 
         const actionDelete = {
             type : '[TODO] Remove Todo',
             payload : 2
         }
-       const newState2 = todoReducer(initialState, actionDelete)
-
-        expect(newState2.length).toBe(1)
+        const newState2 = todoReducer(initialState, actionDelete) // lo borramos 
+        expect(newState2.length).toBe(1) 
         
     })
 
@@ -54,6 +53,8 @@ describe('Pruebas en todoReducer',()=>{
                 payload : 1,
         }
         const newState = todoReducer(initialState , actionToogle)
-        expect(newState[0].done).toBe(false);
+        expect(newState[0].done).toBe(true);
+        const newState2 = todoReducer(newState , actionToogle)
+        expect(newState2[0].done).toBe(false);
     })
 });
